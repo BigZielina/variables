@@ -20,3 +20,15 @@ a given letter can be found using the `count` method for a text string (please s
 """
 
 # Your code here
+text = input("Write the text: ")
+text = text.replace(" ", "")
+
+lst = [i for i in text]
+dic = {i: lst.count(i) for i in lst}
+max = 0
+for char, nr in dic.items():
+    if nr > max:
+        max = nr
+        most_frequent = char
+
+print(most_frequent.upper())
