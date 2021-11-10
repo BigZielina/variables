@@ -9,6 +9,7 @@ Example:
 """
 
 # Your code here
+
 text = str(input("your text: "))
 lst = [0]
 for letter in text:

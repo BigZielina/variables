@@ -20,6 +20,7 @@ a given letter can be found using the `count` method for a text string (please s
 """
 
 # Your code here
+
 text = input("Write the text: ")
 text = text.replace(" ", "")
 
