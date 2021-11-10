@@ -10,3 +10,17 @@ Example:
 """
 
 # Your code here
+
+lst = list(input("enter data: "))
+for elements in lst:
+    if elements == ' ':
+        lst.remove(elements)
+
+a = round(len(lst))
+for i in range(0, a, 2):
+    j = i + 1
+    lst[i], lst[j] = lst[j], lst[i]
+
+lst = " ".join(lst)
+
+print (lst)
